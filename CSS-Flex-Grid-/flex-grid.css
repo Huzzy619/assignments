@@ -1,0 +1,215 @@
+/* ### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;500;700&family=Lexend+Deca:wght@300;400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background: hsl(0, 0%, 95%);
+}
+
+
+.flex-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    /* min-width: 375px;
+    max-width: 1440px; */
+
+}
+.btn1,.btn2,.btn3 {
+    margin-top: 90px;
+}
+
+@media (max-width:500px) {
+    .flex-div {
+        height: 704px;
+        
+    }
+    .btn3{
+        margin-top: 60px;
+    }
+    .btn1{
+        margin-top: 120px;
+    }
+}
+@media screen and (max-width: 980px ) and  (min-width:501px) {
+    .flex-div{
+        height: 80vh;
+    }
+    
+}
+@media screen and (max-width: 705px ) and  (min-width:502px) {
+    .flex-div{
+        height: 100vh;
+    }
+    .btn3{
+        margin-top: 60px;
+    }
+    .btn1{
+        margin-top: 120px;
+    }
+    
+}
+
+
+.first,
+.second,
+.third {
+    height: 100%;
+    width: 250px;
+    /* flex: 1; */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.first {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+
+}
+
+.second {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.car {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+
+}
+
+.description {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    /* width: 200px; */
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: -20px;
+
+}
+
+
+
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px 28px 10px 28px;
+    border-radius: 20px;
+    transition: .1s;
+}
+
+.button-yellow {
+    color: hsl(31, 77%, 52%);
+}
+
+.button-yellow:hover {
+    cursor: pointer;
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.button-blue {
+    color: hsl(184, 100%, 22%);
+}
+
+.button-blue:hover {
+    cursor: pointer;
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.button-dark {
+    color: hsl(179, 100%, 13%);
+}
+
+.button-dark:hover {
+    cursor: pointer;
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+
+
+/* GRID STYLESHEET */
+main{
+    background-color: rgb(9, 9, 41);
+    padding-bottom: 150px;
+}
+.layout {
+    padding-top: 200px;
+    padding-left: 400px;
+    width: 600px;
+    text-align: center;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 400px 200px;
+    column-gap: 10px;
+}
+
+
+.top .a {
+    background-color: hsl(15, 90%, 45%);
+    height: 200px;
+}
+
+.top .b {
+    background-color: hsl(31, 96%, 59%);
+
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 250px 350px;
+    column-gap: 10px;
+
+}
+
+.bottom .a {
+    background-color: rgb(23, 130, 23);
+    height: 200px;
+}
+.sep {
+    display: grid;
+    grid-template-rows: 1.5fr 2fr;
+    row-gap: 10px;
+}
+
+.bottom .sep div {
+    background-color: rgb(14, 185, 185);
+}
